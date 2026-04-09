@@ -1,0 +1,29 @@
+[
+  {
+    "incident_id": "seed-high-cpu-001",
+    "incident_type": "high_cpu",
+    "service": "orders-service",
+    "summary": "Historical CPU saturation resolved by scaling tasks.",
+    "probable_cause": "Traffic spike increased CPU utilization beyond service capacity.",
+    "action_taken": "scale_service",
+    "outcome": "resolved"
+  },
+  {
+    "incident_id": "seed-memory-001",
+    "incident_type": "memory_leak",
+    "service": "checkout-service",
+    "summary": "Historical memory growth resolved by service restart.",
+    "probable_cause": "Leaking application state accumulated over time.",
+    "action_taken": "restart_service",
+    "outcome": "resolved"
+  },
+  {
+    "incident_id": "seed-crash-001",
+    "incident_type": "service_crash",
+    "service": "gateway-service",
+    "summary": "Historical 5xx spike linked to bad deployment and fixed by rollback.",
+    "probable_cause": "New release introduced runtime failure on request handling.",
+    "action_taken": "rollback_deployment",
+    "outcome": "resolved"
+  }
+]
